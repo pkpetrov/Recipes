@@ -15,6 +15,12 @@
 		D25E0E6C20F2167C008E394C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25E0E6B20F2167C008E394C /* Assets.xcassets */; };
 		D25E0E6F20F2167C008E394C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E0E6D20F2167C008E394C /* LaunchScreen.storyboard */; };
 		D25E0E7220F2167C008E394C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E7120F2167C008E394C /* main.m */; };
+		D25E0E8620F22992008E394C /* SHAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E7C20F22991008E394C /* SHAPIClient.m */; };
+		D25E0E8720F22992008E394C /* SHAPIClient+UploadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E7D20F22991008E394C /* SHAPIClient+UploadImage.m */; };
+		D25E0E8820F22992008E394C /* NSDate+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E7E20F22991008E394C /* NSDate+Server.m */; };
+		D25E0E8920F22992008E394C /* SHAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E8020F22991008E394C /* SHAPIResponse.m */; };
+		D25E0E8A20F22992008E394C /* SHAFJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E8420F22991008E394C /* SHAFJSONRequestSerializer.m */; };
+		D25E0E8D20F22B11008E394C /* SHAPIClient+Meals.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E8C20F22B11008E394C /* SHAPIClient+Meals.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,18 @@
 		D25E0E6E20F2167C008E394C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25E0E7020F2167C008E394C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25E0E7120F2167C008E394C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D25E0E7920F22990008E394C /* SHAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAPIClient.h; sourceTree = "<group>"; };
+		D25E0E7A20F22990008E394C /* SHAPIClient+UploadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SHAPIClient+UploadImage.h"; sourceTree = "<group>"; };
+		D25E0E7C20F22991008E394C /* SHAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAPIClient.m; sourceTree = "<group>"; };
+		D25E0E7D20F22991008E394C /* SHAPIClient+UploadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SHAPIClient+UploadImage.m"; sourceTree = "<group>"; };
+		D25E0E7E20F22991008E394C /* NSDate+Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Server.m"; sourceTree = "<group>"; };
+		D25E0E7F20F22991008E394C /* SHAPIResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAPIResponse.h; sourceTree = "<group>"; };
+		D25E0E8020F22991008E394C /* SHAPIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAPIResponse.m; sourceTree = "<group>"; };
+		D25E0E8120F22991008E394C /* NSDate+Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Server.h"; sourceTree = "<group>"; };
+		D25E0E8320F22991008E394C /* SHAFJSONRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAFJSONRequestSerializer.h; sourceTree = "<group>"; };
+		D25E0E8420F22991008E394C /* SHAFJSONRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAFJSONRequestSerializer.m; sourceTree = "<group>"; };
+		D25E0E8B20F22B11008E394C /* SHAPIClient+Meals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHAPIClient+Meals.h"; sourceTree = "<group>"; };
+		D25E0E8C20F22B11008E394C /* SHAPIClient+Meals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SHAPIClient+Meals.m"; sourceTree = "<group>"; };
 		ED33F43939507DDB03024467 /* Pods-RecipeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecipeApp/Pods-RecipeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +102,7 @@
 		D25E0E5E20F2167A008E394C /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D25E0E7820F22984008E394C /* API */,
 				D25E0E5F20F2167A008E394C /* AppDelegate.h */,
 				D25E0E6020F2167A008E394C /* AppDelegate.m */,
 				D25E0E6220F2167A008E394C /* ViewController.h */,
@@ -96,6 +115,25 @@
 				D25E0E6820F2167A008E394C /* RecipeApp.xcdatamodeld */,
 			);
 			path = RecipeApp;
+			sourceTree = "<group>";
+		};
+		D25E0E7820F22984008E394C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D25E0E8120F22991008E394C /* NSDate+Server.h */,
+				D25E0E7E20F22991008E394C /* NSDate+Server.m */,
+				D25E0E8320F22991008E394C /* SHAFJSONRequestSerializer.h */,
+				D25E0E8420F22991008E394C /* SHAFJSONRequestSerializer.m */,
+				D25E0E7920F22990008E394C /* SHAPIClient.h */,
+				D25E0E7C20F22991008E394C /* SHAPIClient.m */,
+				D25E0E7A20F22990008E394C /* SHAPIClient+UploadImage.h */,
+				D25E0E7D20F22991008E394C /* SHAPIClient+UploadImage.m */,
+				D25E0E7F20F22991008E394C /* SHAPIResponse.h */,
+				D25E0E8020F22991008E394C /* SHAPIResponse.m */,
+				D25E0E8B20F22B11008E394C /* SHAPIClient+Meals.h */,
+				D25E0E8C20F22B11008E394C /* SHAPIClient+Meals.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25E0E8920F22992008E394C /* SHAPIResponse.m in Sources */,
 				D25E0E6A20F2167A008E394C /* RecipeApp.xcdatamodeld in Sources */,
 				D25E0E6420F2167A008E394C /* ViewController.m in Sources */,
+				D25E0E8A20F22992008E394C /* SHAFJSONRequestSerializer.m in Sources */,
 				D25E0E7220F2167C008E394C /* main.m in Sources */,
+				D25E0E8820F22992008E394C /* NSDate+Server.m in Sources */,
+				D25E0E8720F22992008E394C /* SHAPIClient+UploadImage.m in Sources */,
 				D25E0E6120F2167A008E394C /* AppDelegate.m in Sources */,
+				D25E0E8620F22992008E394C /* SHAPIClient.m in Sources */,
+				D25E0E8D20F22B11008E394C /* SHAPIClient+Meals.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

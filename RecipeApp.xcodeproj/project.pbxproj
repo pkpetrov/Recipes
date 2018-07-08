@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6536BCDD71DC1135AA396FCC /* libPods-RecipeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCA94AAC5C7CC8674C2EFA7 /* libPods-RecipeApp.a */; };
 		D25E0E6120F2167A008E394C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E6020F2167A008E394C /* AppDelegate.m */; };
-		D25E0E6420F2167A008E394C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E6320F2167A008E394C /* ViewController.m */; };
+		D25E0E6420F2167A008E394C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E6320F2167A008E394C /* HomeViewController.m */; };
 		D25E0E6720F2167A008E394C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E0E6520F2167A008E394C /* Main.storyboard */; };
 		D25E0E6A20F2167A008E394C /* RecipeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E6820F2167A008E394C /* RecipeApp.xcdatamodeld */; };
 		D25E0E6C20F2167C008E394C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25E0E6B20F2167C008E394C /* Assets.xcassets */; };
@@ -32,8 +32,8 @@
 		D25E0E5C20F2167A008E394C /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25E0E5F20F2167A008E394C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D25E0E6020F2167A008E394C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D25E0E6220F2167A008E394C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D25E0E6320F2167A008E394C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D25E0E6220F2167A008E394C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D25E0E6320F2167A008E394C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D25E0E6620F2167A008E394C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25E0E6920F2167A008E394C /* RecipeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeApp.xcdatamodel; sourceTree = "<group>"; };
 		D25E0E6B20F2167C008E394C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,13 +111,12 @@
 		D25E0E5E20F2167A008E394C /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D25E0E9920F24D49008E394C /* ViewControllers */,
 				D25E0E9220F2369B008E394C /* Cells */,
 				D25E0E8E20F2322F008E394C /* Models */,
 				D25E0E7820F22984008E394C /* API */,
 				D25E0E5F20F2167A008E394C /* AppDelegate.h */,
 				D25E0E6020F2167A008E394C /* AppDelegate.m */,
-				D25E0E6220F2167A008E394C /* ViewController.h */,
-				D25E0E6320F2167A008E394C /* ViewController.m */,
 				D25E0E6520F2167A008E394C /* Main.storyboard */,
 				D25E0E6B20F2167C008E394C /* Assets.xcassets */,
 				D25E0E6D20F2167C008E394C /* LaunchScreen.storyboard */,
@@ -165,6 +164,15 @@
 				D25E0E9420F236B4008E394C /* MealCell.m */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D25E0E9920F24D49008E394C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D25E0E6220F2167A008E394C /* HomeViewController.h */,
+				D25E0E6320F2167A008E394C /* HomeViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +271,7 @@
 				D25E0E8920F22992008E394C /* SHAPIResponse.m in Sources */,
 				D25E0E9120F23250008E394C /* Meal.m in Sources */,
 				D25E0E6A20F2167A008E394C /* RecipeApp.xcdatamodeld in Sources */,
-				D25E0E6420F2167A008E394C /* ViewController.m in Sources */,
+				D25E0E6420F2167A008E394C /* HomeViewController.m in Sources */,
 				D25E0E8A20F22992008E394C /* SHAFJSONRequestSerializer.m in Sources */,
 				D25E0E7220F2167C008E394C /* main.m in Sources */,
 				D25E0E8820F22992008E394C /* NSDate+Server.m in Sources */,

@@ -6,18 +6,18 @@
 //  Copyright © 2018 Petar. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "SHAPIClient+Meals.h"
 #import <UIImageView+AFNetworking.h>
 #import "Meal.h"
 #import "MealCell.h"
 #import "Ingredient.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,6 +53,9 @@
         return self.meals.count;
     }
 }
+
+//default size for all devices
+
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -80,6 +83,8 @@
     
     return cell;
 }
+
+
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     
     if(searchText.length > 0) {

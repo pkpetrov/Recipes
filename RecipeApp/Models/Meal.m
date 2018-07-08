@@ -41,15 +41,15 @@
         currentMeal.mealYoutubeURL = dict[@"strYoutube"];
     }
     
-    if(dict[@"strIngredient1"]) {
+    if(dict[@"strIngredient"]) {
         currentMeal.ingredients = [NSMutableArray new];
         for (int i = 1; i <= 20; i++) {
-            NSString* keyPathIngredient = [NSString stringWithFormat:@"strIngredient%i",i];
+            NSString* keyPathIngredientName = [NSString stringWithFormat:@"strIngredient%i",i];
             NSString* keyPathMeasure = [NSString stringWithFormat:@"strMeasure%i",i];
             Ingredient* currentIngredient = [Ingredient new];
             
-            if(dict[keyPathIngredient] && [dict[keyPathIngredient] isKindOfClass:[NSString class]] && [dict[keyPathIngredient] length] > 0) {
-                currentIngredient.name = dict[keyPathIngredient];
+            if(dict[keyPathIngredientName] && [dict[keyPathIngredientName] isKindOfClass:[NSString class]] && [dict[keyPathIngredientName] length] > 0) {
+                currentIngredient.name = dict[keyPathIngredientName];
             }
             
             if(dict[keyPathMeasure] && [dict[keyPathMeasure] isKindOfClass:[NSString class]] && [dict[keyPathMeasure] length] > 0) {

@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EXa-OE-qCk">
-                                <rect key="frame" x="10" y="84" width="355" height="583"/>
+                                <rect key="frame" x="10" y="122.5" width="355" height="544.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XKE-9a-5tb">
                                     <size key="itemSize" width="165" height="197"/>
@@ -66,21 +66,31 @@
                                 </cells>
                             </collectionView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="QUY-8n-c4L">
-                                <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="61.5" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="0ge-QJ-ZW7"/>
                                 </connections>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Meals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wc-Z3-7Yk">
+                                <rect key="frame" x="65" y="25" width="245" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="EXa-OE-qCk" firstAttribute="top" secondItem="QUY-8n-c4L" secondAttribute="bottom" constant="5" id="10X-Tc-feG"/>
+                            <constraint firstItem="3wc-Z3-7Yk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Dvc-8w-jvh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EXa-OE-qCk" secondAttribute="trailing" constant="10" id="ShR-aV-usl"/>
-                            <constraint firstItem="EXa-OE-qCk" firstAttribute="top" secondItem="QUY-8n-c4L" secondAttribute="bottom" id="Xwb-eo-Zh3"/>
+                            <constraint firstItem="3wc-Z3-7Yk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="UpU-ha-Jmb"/>
+                            <constraint firstItem="QUY-8n-c4L" firstAttribute="top" secondItem="3wc-Z3-7Yk" secondAttribute="bottom" constant="5" id="aPs-Vy-Sda"/>
                             <constraint firstItem="QUY-8n-c4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b3l-j2-jj0"/>
-                            <constraint firstItem="QUY-8n-c4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="god-yp-viG"/>
                             <constraint firstItem="EXa-OE-qCk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hH8-pN-dod"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3wc-Z3-7Yk" secondAttribute="trailing" constant="65" id="lVX-pg-Tru"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EXa-OE-qCk" secondAttribute="bottom" id="mIS-7Q-QHp"/>
+                            <constraint firstItem="QUY-8n-c4L" firstAttribute="top" secondItem="3wc-Z3-7Yk" secondAttribute="bottom" constant="5" id="nxN-9H-xit"/>
                             <constraint firstItem="QUY-8n-c4L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pjZ-PN-aLS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

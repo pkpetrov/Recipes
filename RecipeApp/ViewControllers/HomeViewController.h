@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource,UISearchBarDelegate>
+@interface HomeViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource,UISearchBarDelegate>{
+    IBOutlet UILabel* titleLabel;
+}
 
 @property (nonatomic, strong) IBOutlet UICollectionView* collectionView;
 @property (nonatomic, strong) IBOutlet UISearchBar* searchBar;

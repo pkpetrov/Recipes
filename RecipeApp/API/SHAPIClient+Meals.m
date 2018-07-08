@@ -23,4 +23,13 @@
     return client;
     
 }
++(SHAPIClient *)searchMealWithText:(NSString*)text success:(void (^)(SHAPIResponse *response))success failure:(void (^)(NSError *error))failure {
+    
+    NSString* path = [NSString stringWithFormat:@"search.php?s=%@",text];
+    NSString * pathSpaced = [path stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+
+    SHAPIClient* client = [SHAPIClient POST:pathSpaced params:nil success:success failure:failure];
+    return client;
+    
+}
 @end

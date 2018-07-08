@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource,UISearchBarDelegate>
 
-
+@property (nonatomic, strong) IBOutlet UICollectionView* collectionView;
+@property (nonatomic, strong) IBOutlet UISearchBar* searchBar;
+@property (nonatomic, strong) NSMutableArray* meals;
+@property (nonatomic, strong) NSMutableArray* searchedMeals;
+@property (nonatomic) BOOL isSearching;
 @end
 

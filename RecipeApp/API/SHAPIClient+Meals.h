@@ -11,4 +11,5 @@
 @interface SHAPIClient (Meals)
 +(SHAPIClient *)getLatestMeals:(void (^)(SHAPIResponse *response))success failure:(void (^)(NSError *error))failure;
 +(SHAPIClient *)getMealDetails:(NSString*)mealID success:(void (^)(SHAPIResponse *response))success failure:(void (^)(NSError *error))failure;
++(SHAPIClient *)searchMealWithText:(NSString*)text success:(void (^)(SHAPIResponse *response))success failure:(void (^)(NSError *error))failure;
 @end

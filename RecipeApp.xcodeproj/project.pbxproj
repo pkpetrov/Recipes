@@ -21,6 +21,9 @@
 		D25E0E8920F22992008E394C /* SHAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E8020F22991008E394C /* SHAPIResponse.m */; };
 		D25E0E8A20F22992008E394C /* SHAFJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E8420F22991008E394C /* SHAFJSONRequestSerializer.m */; };
 		D25E0E8D20F22B11008E394C /* SHAPIClient+Meals.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E8C20F22B11008E394C /* SHAPIClient+Meals.m */; };
+		D25E0E9120F23250008E394C /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E9020F23250008E394C /* Meal.m */; };
+		D25E0E9520F236B4008E394C /* MealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E9420F236B4008E394C /* MealCell.m */; };
+		D25E0E9820F23A6D008E394C /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E0E9720F23A6D008E394C /* Ingredient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,12 @@
 		D25E0E8420F22991008E394C /* SHAFJSONRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAFJSONRequestSerializer.m; sourceTree = "<group>"; };
 		D25E0E8B20F22B11008E394C /* SHAPIClient+Meals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHAPIClient+Meals.h"; sourceTree = "<group>"; };
 		D25E0E8C20F22B11008E394C /* SHAPIClient+Meals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SHAPIClient+Meals.m"; sourceTree = "<group>"; };
+		D25E0E8F20F23250008E394C /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		D25E0E9020F23250008E394C /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		D25E0E9320F236B4008E394C /* MealCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealCell.h; sourceTree = "<group>"; };
+		D25E0E9420F236B4008E394C /* MealCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealCell.m; sourceTree = "<group>"; };
+		D25E0E9620F23A6D008E394C /* Ingredient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		D25E0E9720F23A6D008E394C /* Ingredient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
 		ED33F43939507DDB03024467 /* Pods-RecipeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecipeApp/Pods-RecipeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +111,8 @@
 		D25E0E5E20F2167A008E394C /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				D25E0E9220F2369B008E394C /* Cells */,
+				D25E0E8E20F2322F008E394C /* Models */,
 				D25E0E7820F22984008E394C /* API */,
 				D25E0E5F20F2167A008E394C /* AppDelegate.h */,
 				D25E0E6020F2167A008E394C /* AppDelegate.m */,
@@ -134,6 +145,26 @@
 				D25E0E8C20F22B11008E394C /* SHAPIClient+Meals.m */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		D25E0E8E20F2322F008E394C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D25E0E8F20F23250008E394C /* Meal.h */,
+				D25E0E9020F23250008E394C /* Meal.m */,
+				D25E0E9620F23A6D008E394C /* Ingredient.h */,
+				D25E0E9720F23A6D008E394C /* Ingredient.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D25E0E9220F2369B008E394C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D25E0E9320F236B4008E394C /* MealCell.h */,
+				D25E0E9420F236B4008E394C /* MealCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,12 +259,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25E0E9520F236B4008E394C /* MealCell.m in Sources */,
 				D25E0E8920F22992008E394C /* SHAPIResponse.m in Sources */,
+				D25E0E9120F23250008E394C /* Meal.m in Sources */,
 				D25E0E6A20F2167A008E394C /* RecipeApp.xcdatamodeld in Sources */,
 				D25E0E6420F2167A008E394C /* ViewController.m in Sources */,
 				D25E0E8A20F22992008E394C /* SHAFJSONRequestSerializer.m in Sources */,
 				D25E0E7220F2167C008E394C /* main.m in Sources */,
 				D25E0E8820F22992008E394C /* NSDate+Server.m in Sources */,
+				D25E0E9820F23A6D008E394C /* Ingredient.m in Sources */,
 				D25E0E8720F22992008E394C /* SHAPIClient+UploadImage.m in Sources */,
 				D25E0E6120F2167A008E394C /* AppDelegate.m in Sources */,
 				D25E0E8620F22992008E394C /* SHAPIClient.m in Sources */,

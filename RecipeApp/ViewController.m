@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"This is the first controller");
     NSLog(@"This is second try");
+    NSLog(@"This is impossible");
 }
 
 
